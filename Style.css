@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'times new roman', serif;
+}
+.profile-pic{
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   border: 2px solid #000;
+   cursor: pointer;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+   object-fit: cover;
+}
+.description{
+  max-width: 400px;
+  margin: 15px auto;
+  line-height: 1.6;
+  text-align: center;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    min-height: 100vh;  
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;;
+    padding: 2% 2%;
+    border-radius: 1em;
+    background-color: rgba(0, 229, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border: 1px solid   rgb(0, 229, 255, 0.3);
+    color: #ffff;
+    text-shadow: 2px 2px 3px #000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+.judul{
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+.subtitle{
+    font-size: 10px;
+    color: #28c9c4;
+    text-shadow: 1px 1px 2px #000000;
+    margin-top: 0px;
+}
+.info-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.contact-info{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.btn-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.btn-box button{
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+.btn-box .btn-Follow{
+    background-color: #00e5ff;
+    color: #000;
+}
+.btn-box .btn-Follow:hover{
+    background-color:transparent;
+    color: #00e5ff;
+    border: 2px solid #00e5ff;
+}
+.btn-box .btn-SendMessage{
+    background-color: #00e5ff;
+    color: #000;
+}
+.btn-box .btn-SendMessage:hover{
+    background-color:transparent;
+    color: #ffff;
+    border: 2px solid #00e5ff;
+}
+@media (max-width: 900px) {
+    .container .contact-info{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn-box button{
+        padding: 12px 20px;
+        font-size: 14px;
+        border-radius: 5px;
+        cursor: pointer;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+}
